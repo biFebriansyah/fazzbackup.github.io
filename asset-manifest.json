@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fazzbackupweb/static/css/main.85a93fb3.css",
+    "main.js": "/fazzbackupweb/static/js/main.f89878d6.js",
+    "static/js/787.2c5d20e2.chunk.js": "/fazzbackupweb/static/js/787.2c5d20e2.chunk.js",
+    "index.html": "/fazzbackupweb/index.html",
+    "main.85a93fb3.css.map": "/fazzbackupweb/static/css/main.85a93fb3.css.map",
+    "main.f89878d6.js.map": "/fazzbackupweb/static/js/main.f89878d6.js.map",
+    "787.2c5d20e2.chunk.js.map": "/fazzbackupweb/static/js/787.2c5d20e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85a93fb3.css",
+    "static/js/main.f89878d6.js"
+  ]
+}
