@@ -14,7 +14,7 @@ get_latest_release() {
 
 repo="biFebriansyah/fazzbackup"
 version="$(get_latest_release "${repo}")"  # v1.2.0
-
+echo "Found version ${version}"
 # if args has version override it and not eq "latest"
 if test $# -eq 1; then
   if test "$1" != "latest"; then
@@ -27,6 +27,7 @@ fi
 platform="$(uname | tr "[A-Z]" "[a-z]")"  # Linux => linux
 arch="$(uname -m | sed 's/x86_64/amd64/')"  # x86_64 => amd64
 package="fazzbackup-${platform}-${arch}.tar.gz"
+echo "using package ${package}"
 package_url="https://github.com/${repo}/releases/download/${version}/${package}"
 bin="fazzbackup"
 dest_dir="/usr/local/bin"
@@ -45,6 +46,7 @@ if test -e "${bin_path}"; then
   fi
 fi
 cd "${tmp_dir}"
+echo "download package from ${package_url}"
 curl -sSL "${package_url}" | tar xzf -
 
 if test $(id -u) -eq 0; then
